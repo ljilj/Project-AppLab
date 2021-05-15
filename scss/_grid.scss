@@ -1,0 +1,29 @@
+.c-grid {
+    display:-ms-grid;
+    display: grid;
+}
+
+.c-grid--two {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+    @media (min-width: $mobile) {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.c-grid--three {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+    @media (min-width: $mobile) {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-md) {
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

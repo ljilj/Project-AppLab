@@ -1,0 +1,120 @@
+/*** Header ***/
+.c-header-section {
+    margin-block-start: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 5px var(--color-grey-light);
+}
+
+.c-nav__header {
+    justify-content: space-between;
+
+    @media (min-width: 991px) {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+}
+
+.c-nav__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-block-start: 0.7rem;
+}
+
+.c-nav__toggle {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: transparent;
+
+    @media (min-width: 991px) {
+        display: none;
+    }
+}
+
+.c-nav-links__container {
+    display: none;
+
+    @media (min-width: 991px) {
+        display: flex;
+    }
+
+    a {
+        margin: 1rem;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: var(--color-warning);
+        }
+
+        @media (min-width: 991px) {
+            font-size: 0.875rem;
+            margin: 1rem 2rem;
+        }
+    }
+}
+
+.active-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+
+    a {
+        padding: 1rem 0;
+        font-size: 2rem;
+
+        &:first-child {
+            margin-block-start: 30vh;
+        }
+    }
+}
+
+/*** Footer ***/
+.c-footer-section {
+    padding: 6.25rem 0;
+}
+
+.c-footer__logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.c-footer__icons {
+    margin: 3.75rem 0 5rem 0;
+
+    svg:hover {
+        color: var(--color-white);
+    }
+}
+
+.c-footer__links {
+    margin-block-start: 3.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 991px) {
+        flex-direction: row;
+    }
+
+    a {
+        margin: 0.5rem 0;
+
+        @media (min-width: 991px) {
+            margin: 0 1rem;
+        }
+
+        &:hover {
+            color: var(--color-warning);
+        }
+    }
+}
